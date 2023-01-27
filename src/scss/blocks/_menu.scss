@@ -1,0 +1,112 @@
+.menu {
+  &__logo {
+    display: none;
+  }
+
+  &__close {
+    display: none;
+  }
+
+  @media screen and (max-width: 920px) {
+    height: 100%;
+    max-height: 100%;
+    max-width: 429px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1000;
+    background-color: #fff;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding: 39px;
+    transition: left .5s ease;
+
+    &__overlay {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: rgba(7, 34, 47, 0.7);
+      transition: none;
+      display: none;
+
+      &_active {
+        display: block;
+      }
+    }
+
+    &_active {
+      left: 0;
+    }
+
+    &__logo {
+      display: block;
+    }
+
+    &__close {
+      width: 39px;
+      height: 39px;
+      display: block;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    &__list {
+      box-sizing: border-box;
+      margin: 21px 0px 0px 0px;
+      padding: 55px 0px 0px 0px;
+      border-top: 1px solid #C4C4C4;
+      flex-direction: column;
+      flex-basis: 100%;
+      gap: 39px;
+    }
+
+    &__item {
+      font-size: 22px;
+      margin: 0;
+      align-self: flex-start;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    max-width: 100%;
+    padding: 48px 33px;
+
+    &__list {
+      margin: 44px 0px 0px 0px;
+      padding: 58px 0px 0px 0px;
+      gap: 45px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    padding: 37px 15px;
+
+    &__logo {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    &__close {
+      width: 34px;
+      height: 34px;
+    }
+
+    &__list {
+      margin: 20px 0px 0px 0px;
+      padding: 68px 0px 0px 0px;
+    }
+
+    &__item {
+      font-size: 22px;
+    }
+  }
+}

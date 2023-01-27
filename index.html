@@ -11,30 +11,43 @@
 
 <body class="root">
   <div class="page">
+    <div class="menu__overlay"></div>
     <header class="header">
       <p class="header__logo">Brit<span class="header__logo_accent">lex</span></p>
-      <nav class="header__menu">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="" class="header__link">Home</a>
+      <button class="header__burger burger">
+        <span class="burger__line"></span>
+      </button>
+      <nav class="header__menu menu">
+        <p class="header__logo menu__logo">Brit<span class="header__logo_accent menu__logo_accent">lex</span></p>
+        <button class="menu__close">
+          <img src="images/close-icon.svg" alt="Кнопка закрытия" class="menu__close-img">
+        </button>
+        <ul class="header__list menu__list">
+          <li class="header__item menu__item">
+            <a href="" class="header__link menu__link">Home</a>
           </li>
-          <li class="header__item">
-            <a href="" class="header__link">Skills</a>
+          <li class="header__item menu__item">
+            <a href="" class="header__link menu__link">Skills</a>
           </li>
-          <li class="header__item">
-            <a href="" class="header__link">About Us</a>
+          <li class="header__item menu__item">
+            <a href="" class="header__link menu__link">About Us</a>
           </li>
-          <li class="header__item">
-            <a href="" class="header__link">Pricing</a>
+          <li class="header__item menu__item">
+            <a href="" class="header__link menu__link">Pricing</a>
           </li>
-          <li class="header__item">
-            <a href="" class="header__link">Contacts</a>
+          <li class="header__item menu__item">
+            <a href="" class="header__link menu__link">Contacts</a>
           </li>
         </ul>
+        <button class="header__button">Let’s Talk</button>
       </nav>
-      <button class="header__button">Let’s Talk</button>
     </header>
+    <main class="main">
+      <section class="learn"></section>
+    </main>
   </div>
+
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
