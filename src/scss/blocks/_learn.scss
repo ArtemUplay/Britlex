@@ -1,0 +1,64 @@
+.learn {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 51px 0px 103px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__main-information-wrapper {
+    // width: 100%;
+  }
+
+  &__title {
+    margin: 50px 0px 40px 0px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    white-space: pre;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 426px;
+      top: 76px;
+      background: url('../../../images/lamp.svg') center no-repeat;
+      width: 85px;
+      height: 85px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 36px;
+    color: $color-gray;
+    margin: 0px 0px 61px 0px;
+    white-space: pre;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    line-height: 54px;
+    background-color: $color-black;
+    border-radius: 15px;
+    padding: 32px 115px;
+    color: #fff;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 438px;
+  }
+
+  &__image-wrapper {
+
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 661px;
+    aspect-ratio: 1/1;
+  }
+}
