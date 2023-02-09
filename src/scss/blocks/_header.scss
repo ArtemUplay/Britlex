@@ -10,14 +10,15 @@
     padding: 39px 30px 0px;
     justify-content: space-between;
   }
+  
+  @include desktop {
+    padding: 25px 30px 0px;
+  }
 
   @media screen and (max-width: 350px) {
     padding: 39px 15px 0px;
   }
 
-  @include desktop {
-    padding: 25px 30px 0px;
-  }
 
   &__logo {
     margin: 0;
