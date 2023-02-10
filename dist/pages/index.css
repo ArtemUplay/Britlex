@@ -922,6 +922,14 @@ template {
   row-gap: 20px;
   align-items: stretch;
   grid-template-rows: repeat(2, auto);
+  grid-auto-rows: repeat(3, auto);
+}
+@media screen and (max-width: 1050px) {
+  .cards {
+    -moz-column-gap: 13px;
+         column-gap: 13px;
+    row-gap: 13px;
+  }
 }
 .cards__card {
   background-color: #F5F5F5;
@@ -931,15 +939,44 @@ template {
   padding: 35px 0px 92px;
   grid-row: 1/3;
 }
+@media screen and (max-width: 1050px) {
+  .cards__card_type_speaking {
+    padding: 0px 0px 52px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .cards__card_type_speaking {
+    padding: 0px 10px 37px;
+  }
+}
 .cards__card_type_writting {
   display: grid;
   padding: 0px 0px 44px 0px;
 }
+@media screen and (max-width: 1050px) {
+  .cards__card_type_writting {
+    padding: 0px 0px 30px 0px;
+  }
+}
 .cards__card_type_reading {
   padding: 0px 0px 47px 0px;
 }
+@media screen and (max-width: 1050px) {
+  .cards__card_type_reading {
+    padding: 16px 0px 32px 0px;
+  }
+}
 .cards__card_type_listening {
+  padding-top: 44px;
   grid-column: 2/4;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 1050px) {
+  .cards__card_type_listening {
+    padding-bottom: 29px;
+  }
 }
 .cards__image_type_speaking {
   width: 100%;
@@ -947,47 +984,151 @@ template {
   max-width: 390px;
   margin: 0px 22px;
 }
+@media screen and (max-width: 1050px) {
+  .cards__image_type_speaking {
+    max-width: 260px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .cards__image_type_speaking {
+    max-width: 214px;
+    margin: 0px 10px;
+  }
+}
 .cards__image_type_writing {
   justify-self: end;
   margin: -4px 19px 0px 0px;
 }
+@media screen and (max-width: 1050px) {
+  .cards__image_type_writing {
+    max-width: 205px;
+    aspect-ratio: 1/1;
+    margin: 5px 10px 0px 0px;
+  }
+}
 .cards__image_type_reading {
   margin: 9px 0px 10px 1px;
+}
+@media screen and (max-width: 1050px) {
+  .cards__image_type_reading {
+    margin: 0px 0px 15px 3px;
+    max-width: 243px;
+  }
+}
+.cards__image_type_listening {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  margin-right: 25px;
+}
+@media screen and (max-width: 1050px) {
+  .cards__image_type_listening {
+    margin-right: 10px;
+    max-width: 254px;
+  }
 }
 .cards__title {
   font-size: 30px;
   line-height: 45px;
 }
+@media screen and (max-width: 1050px) {
+  .cards__title {
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
 .cards__title_type_speaking {
   margin: 5px 0px 31px 43px;
+}
+@media screen and (max-width: 1050px) {
+  .cards__title_type_speaking {
+    margin: 20px 0px 15px 29px;
+  }
 }
 .cards__title_type_writing {
   margin: 10px 42px 17px;
 }
+@media screen and (max-width: 1050px) {
+  .cards__title_type_writing {
+    margin: -5px 0px 7px 29px;
+  }
+}
 .cards__title_type_reading {
   margin: 0px 41px 15px;
+}
+@media screen and (max-width: 1050px) {
+  .cards__title_type_reading {
+    margin: 0px 26px 7px;
+  }
+}
+.cards__title_type_listening {
+  margin: 0px 0px 19px 48px;
+}
+@media screen and (max-width: 1050px) {
+  .cards__title_type_listening {
+    margin: 0px 0px 7px 37px;
+  }
 }
 .cards__text {
   font-size: 16px;
   line-height: 24px;
   color: #8F95A5;
 }
+@media screen and (max-width: 1050px) {
+  .cards__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
 .cards__text_type_speaking {
   margin: 0px 43px;
+}
+@media screen and (max-width: 1050px) {
+  .cards__text_type_speaking {
+    margin: 0px 0px 0px 29px;
+  }
 }
 .cards__text_type_speaking:last-child {
   margin-bottom: 36px;
 }
+@media screen and (max-width: 1050px) {
+  .cards__text_type_speaking:last-child {
+    margin-bottom: 28px;
+  }
+}
 .cards__text_type_speaking:not(:last-child) {
   margin-bottom: 26px;
+}
+@media screen and (max-width: 1050px) {
+  .cards__text_type_speaking:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 .cards__text_type_writing {
   margin: 0px 42px 33px;
 }
+@media screen and (max-width: 1050px) {
+  .cards__text_type_writing {
+    margin: 0px 0px 26px 29px;
+  }
+}
 .cards__text_type_reading {
   margin: 0px 35px 35px 43px;
 }
+@media screen and (max-width: 1050px) {
+  .cards__text_type_reading {
+    margin: 0px 0px 30px 26px;
+  }
+}
+.cards__text_type_listening {
+  margin: 0px 25px 25px 48px;
+}
+@media screen and (max-width: 1050px) {
+  .cards__text_type_listening {
+    margin: 0px 0px 21px 37px;
+  }
+}
 .cards__button {
+  box-sizing: border-box;
   cursor: pointer;
   background-color: #263238;
   border-radius: 5px;
@@ -998,16 +1139,91 @@ template {
   border: 0;
   margin: 0;
 }
+@media screen and (max-width: 1050px) {
+  .cards__button {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 16px 0px;
+    height: 57px;
+  }
+}
 .cards__button_type_speaking {
   margin: 0px 43px;
   padding: 17px 64px;
+}
+@media screen and (max-width: 1050px) {
+  .cards__button_type_speaking {
+    margin-left: 28px;
+    margin-right: 0px;
+    width: 100%;
+    max-width: 196px;
+  }
 }
 .cards__button_type_writing {
   justify-self: start;
   margin: 0px 42px;
   padding: 15px 51px;
 }
+@media screen and (max-width: 1050px) {
+  .cards__button_type_writing {
+    margin: 0px 0px 0px 29px;
+  }
+}
 .cards__button_type_reading {
   margin: 0px 42px;
   padding: 15px 51px;
+}
+@media screen and (max-width: 1050px) {
+  .cards__button_type_reading {
+    margin: 0px 0px 0px 27px;
+  }
+}
+.cards__button_type_listening {
+  margin-left: 42px;
+  padding: 15px 51px;
+}
+@media screen and (max-width: 1050px) {
+  .cards__button_type_listening {
+    margin-left: 37px;
+  }
+}
+
+.about-us {
+  box-sizing: border-box;
+  padding: 0px 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about-us__title {
+  font-size: 48px;
+  line-height: 80px;
+  margin: 0px 0px 23px 0px;
+}
+.about-us__text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+  margin: 0px 0px 42px 0px;
+}
+.about-us__columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.about-us__column {
+  flex: 0 1 33.333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us__number {
+  font-size: 48px;
+  line-height: 80px;
+  color: #2A3246;
+  margin: 0;
+}
+.about-us__number-text {
+  font-size: 20px;
+  line-height: 30px;
 }
